@@ -1539,3 +1539,143 @@ com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct 
     0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
 }
 [main] 27/02/2024 22:31:14.674  INFO LOGGER (57): Read Done
+[main] 27/02/2024 22:32:22.173  INFO Version (44): HHH000412: Hibernate ORM core version 5.6.14.Final
+[main] 27/02/2024 22:32:22.426  INFO Version (56): HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[main] 27/02/2024 22:32:22.483  INFO ConnectionProviderInitiator (137): HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+[main] 27/02/2024 22:32:22.485  INFO C3P0ConnectionProvider (116): HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_db?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC
+[main] 27/02/2024 22:32:22.485  INFO C3P0ConnectionProvider (117): HHH10001001: Connection properties: {password=****, user=root}
+[main] 27/02/2024 22:32:22.485  INFO C3P0ConnectionProvider (120): HHH10001003: Autocommit mode: false
+[MLog-Init-Reporter] 27/02/2024 22:32:22.502  INFO MLog (212): MLog clients using slf4j logging.
+[main] 27/02/2024 22:32:22.527  INFO C3P0Registry (212): Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+[main] 27/02/2024 22:32:22.541  INFO C3P0ConnectionProvider (200): HHH10001007: JDBC isolation level: <unknown>
+[main] 27/02/2024 22:32:22.548  INFO AbstractPoolBackedDataSource (212): Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@b343faa7 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@e4f7e866 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 50000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfltb11t9avzk16r9v6l|56da52a7, idleConnectionTestPeriod -> 30000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 200, maxStatements -> 200, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@dcdf558f [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfltb11t9avzk16r9v6l|3241713e, jdbcUrl -> jdbc:mysql://localhost:3306/test_db?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC, properties -> {password=******, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfltb11t9avzk16r9v6l|49aa766b, numHelperThreads -> 3 ]
+[main] 27/02/2024 22:32:22.797  INFO Dialect (175): HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[main] 27/02/2024 22:32:23.66  INFO access (48): HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@71a3e05c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] 27/02/2024 22:32:23.102  INFO JtaPlatformInitiator (52): HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] 27/02/2024 22:32:23.106  INFO LOGGER (31): Successfully random list animals
+[main] 27/02/2024 22:32:23.231  INFO LOGGER (44): Done
+[Thread-6] 27/02/2024 22:32:23.308  INFO StatisticalLoggingSessionEventListener (258): Session Metrics {
+    2191917 nanoseconds spent acquiring 1 JDBC connections;
+    1501375 nanoseconds spent releasing 1 JDBC connections;
+    2415708 nanoseconds spent preparing 1 JDBC statements;
+    20828709 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+[main] 27/02/2024 22:32:23.309  INFO LOGGER (57): Read Done
+[main] 27/02/2024 22:32:53.576  INFO Version (44): HHH000412: Hibernate ORM core version 5.6.14.Final
+[main] 27/02/2024 22:32:53.790  INFO Version (56): HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[main] 27/02/2024 22:32:53.841  INFO ConnectionProviderInitiator (137): HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+[main] 27/02/2024 22:32:53.843  INFO C3P0ConnectionProvider (116): HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_db?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC
+[main] 27/02/2024 22:32:53.843  INFO C3P0ConnectionProvider (117): HHH10001001: Connection properties: {password=****, user=root}
+[main] 27/02/2024 22:32:53.843  INFO C3P0ConnectionProvider (120): HHH10001003: Autocommit mode: false
+[MLog-Init-Reporter] 27/02/2024 22:32:53.856  INFO MLog (212): MLog clients using slf4j logging.
+[main] 27/02/2024 22:32:53.880  INFO C3P0Registry (212): Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+[main] 27/02/2024 22:32:53.894  INFO C3P0ConnectionProvider (200): HHH10001007: JDBC isolation level: <unknown>
+[main] 27/02/2024 22:32:53.901  INFO AbstractPoolBackedDataSource (212): Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@e1f8c79c [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@13acb55b [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 50000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfltb11t9bk6l1yerfu|56da52a7, idleConnectionTestPeriod -> 30000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 200, maxStatements -> 200, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@b942284 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfltb11t9bk6l1yerfu|3241713e, jdbcUrl -> jdbc:mysql://localhost:3306/test_db?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC, properties -> {password=******, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfltb11t9bk6l1yerfu|49aa766b, numHelperThreads -> 3 ]
+[main] 27/02/2024 22:32:54.110  INFO Dialect (175): HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[main] 27/02/2024 22:32:54.370  INFO access (48): HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@71a3e05c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] 27/02/2024 22:32:54.401  INFO JtaPlatformInitiator (52): HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] 27/02/2024 22:32:54.405  INFO LOGGER (31): Successfully random list animals
+[main] 27/02/2024 22:32:54.526  INFO LOGGER (44): Done
+[Thread-6] 27/02/2024 22:32:54.578  INFO StatisticalLoggingSessionEventListener (258): Session Metrics {
+    997708 nanoseconds spent acquiring 1 JDBC connections;
+    1862750 nanoseconds spent releasing 1 JDBC connections;
+    1186000 nanoseconds spent preparing 1 JDBC statements;
+    1093167 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+[main] 27/02/2024 22:32:54.579  INFO LOGGER (57): Read Done
+[main] 27/02/2024 22:33:30.191  INFO Version (44): HHH000412: Hibernate ORM core version 5.6.14.Final
+[main] 27/02/2024 22:33:30.384  INFO Version (56): HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[main] 27/02/2024 22:33:30.446  INFO ConnectionProviderInitiator (137): HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+[main] 27/02/2024 22:33:30.448  INFO C3P0ConnectionProvider (116): HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_db?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC
+[main] 27/02/2024 22:33:30.448  INFO C3P0ConnectionProvider (117): HHH10001001: Connection properties: {password=****, user=root}
+[main] 27/02/2024 22:33:30.448  INFO C3P0ConnectionProvider (120): HHH10001003: Autocommit mode: false
+[MLog-Init-Reporter] 27/02/2024 22:33:30.464  INFO MLog (212): MLog clients using slf4j logging.
+[main] 27/02/2024 22:33:30.499  INFO C3P0Registry (212): Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+[main] 27/02/2024 22:33:30.518  INFO C3P0ConnectionProvider (200): HHH10001007: JDBC isolation level: <unknown>
+[main] 27/02/2024 22:33:30.525  INFO AbstractPoolBackedDataSource (212): Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@cf02c823 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@371d1d4c [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 50000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfltb11t9ccfg1aeu908|23ee75c5, idleConnectionTestPeriod -> 30000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 200, maxStatements -> 200, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@ae02ea36 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfltb11t9ccfg1aeu908|5ecba515, jdbcUrl -> jdbc:mysql://localhost:3306/test_db?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC, properties -> {password=******, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfltb11t9ccfg1aeu908|963176, numHelperThreads -> 3 ]
+[main] 27/02/2024 22:33:30.755  INFO Dialect (175): HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[main] 27/02/2024 22:33:31.36  INFO access (48): HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@39c85c1a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] 27/02/2024 22:33:31.70  INFO JtaPlatformInitiator (52): HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] 27/02/2024 22:33:31.75  INFO LOGGER (31): Successfully random list animals
+[main] 27/02/2024 22:33:31.209  INFO LOGGER (44): Done
+[Thread-6] 27/02/2024 22:33:34.393  INFO StatisticalLoggingSessionEventListener (258): Session Metrics {
+    32379584 nanoseconds spent acquiring 1 JDBC connections;
+    4344542 nanoseconds spent releasing 1 JDBC connections;
+    34692875 nanoseconds spent preparing 1 JDBC statements;
+    7969833 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+[main] 27/02/2024 22:33:36.691  INFO LOGGER (57): Read Done
+[main] 27/02/2024 22:34:16.978  INFO Version (44): HHH000412: Hibernate ORM core version 5.6.14.Final
+[main] 27/02/2024 22:34:17.171  INFO Version (56): HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[main] 27/02/2024 22:34:17.227  INFO ConnectionProviderInitiator (137): HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+[main] 27/02/2024 22:34:17.230  INFO C3P0ConnectionProvider (116): HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_db?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC
+[main] 27/02/2024 22:34:17.230  INFO C3P0ConnectionProvider (117): HHH10001001: Connection properties: {password=****, user=root}
+[main] 27/02/2024 22:34:17.230  INFO C3P0ConnectionProvider (120): HHH10001003: Autocommit mode: false
+[MLog-Init-Reporter] 27/02/2024 22:34:17.247  INFO MLog (212): MLog clients using slf4j logging.
+[main] 27/02/2024 22:34:17.271  INFO C3P0Registry (212): Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+[main] 27/02/2024 22:34:17.292  INFO C3P0ConnectionProvider (200): HHH10001007: JDBC isolation level: <unknown>
+[main] 27/02/2024 22:34:17.299  INFO AbstractPoolBackedDataSource (212): Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@c19b7de0 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@e65f57c9 [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 50000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfltb11t9dciy178j3b3|23ee75c5, idleConnectionTestPeriod -> 30000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 200, maxStatements -> 200, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@5d4524b3 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfltb11t9dciy178j3b3|5ecba515, jdbcUrl -> jdbc:mysql://localhost:3306/test_db?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC, properties -> {password=******, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfltb11t9dciy178j3b3|963176, numHelperThreads -> 3 ]
+[main] 27/02/2024 22:34:17.539  INFO Dialect (175): HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[main] 27/02/2024 22:34:17.815  INFO access (48): HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@39c85c1a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] 27/02/2024 22:34:17.845  INFO JtaPlatformInitiator (52): HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] 27/02/2024 22:34:17.851  INFO LOGGER (31): Successfully random list animals
+[main] 27/02/2024 22:34:17.973  INFO LOGGER (44): Done
+[Thread-6] 27/02/2024 22:34:18.41  INFO StatisticalLoggingSessionEventListener (258): Session Metrics {
+    1880167 nanoseconds spent acquiring 1 JDBC connections;
+    2290000 nanoseconds spent releasing 1 JDBC connections;
+    2179333 nanoseconds spent preparing 1 JDBC statements;
+    2618250 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+[main] 27/02/2024 22:34:20.826  INFO LOGGER (57): Read Done
+[main] 27/02/2024 22:36:58.13  INFO Version (44): HHH000412: Hibernate ORM core version 5.6.14.Final
+[main] 27/02/2024 22:36:58.641  INFO Version (56): HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[main] 27/02/2024 22:36:58.812  INFO ConnectionProviderInitiator (137): HHH000130: Instantiating explicit connection provider: org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+[main] 27/02/2024 22:36:58.815  INFO C3P0ConnectionProvider (116): HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_db?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC
+[main] 27/02/2024 22:36:58.816  INFO C3P0ConnectionProvider (117): HHH10001001: Connection properties: {password=****, user=root}
+[main] 27/02/2024 22:36:58.816  INFO C3P0ConnectionProvider (120): HHH10001003: Autocommit mode: false
+[MLog-Init-Reporter] 27/02/2024 22:36:58.855  INFO MLog (212): MLog clients using slf4j logging.
+[main] 27/02/2024 22:36:58.897  INFO C3P0Registry (212): Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+[main] 27/02/2024 22:36:58.926  INFO C3P0ConnectionProvider (200): HHH10001007: JDBC isolation level: <unknown>
+[main] 27/02/2024 22:36:58.937  INFO AbstractPoolBackedDataSource (212): Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@3be67d2e [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@6d9a6aed [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 50000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, identityToken -> z8kfltb11t9gt891ho20ng|56da52a7, idleConnectionTestPeriod -> 30000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 200, maxStatements -> 200, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@6581d816 [ description -> null, driverClass -> null, factoryClassLocation -> null, forceUseNamedDriverClass -> false, identityToken -> z8kfltb11t9gt891ho20ng|3241713e, jdbcUrl -> jdbc:mysql://localhost:3306/test_db?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC, properties -> {password=******, user=******} ], preferredTestQuery -> null, privilegeSpawnedThreads -> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, extensions -> {}, factoryClassLocation -> null, identityToken -> z8kfltb11t9gt891ho20ng|49aa766b, numHelperThreads -> 3 ]
+[main] 27/02/2024 22:36:59.527  INFO Dialect (175): HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[main] 27/02/2024 22:37:00.79  INFO access (48): HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@71a3e05c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[main] 27/02/2024 22:37:00.122  INFO JtaPlatformInitiator (52): HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[main] 27/02/2024 22:37:00.131  INFO LOGGER (31): Successfully random list animals
+[main] 27/02/2024 22:37:00.313  INFO LOGGER (44): Done
+[Thread-6] 27/02/2024 22:37:00.408  INFO StatisticalLoggingSessionEventListener (258): Session Metrics {
+    1874750 nanoseconds spent acquiring 1 JDBC connections;
+    1842250 nanoseconds spent releasing 1 JDBC connections;
+    2789084 nanoseconds spent preparing 1 JDBC statements;
+    2886166 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+[main] 27/02/2024 22:37:00.409  INFO LOGGER (57): Read Done

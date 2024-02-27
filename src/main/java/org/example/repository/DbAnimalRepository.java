@@ -33,6 +33,8 @@ public class DbAnimalRepository implements AnimalRepository {
                 txn.rollback();
             }
             LOGGER.error("Save error ", ex);
+        } finally {
+            session.close();
         }
         return null;
     }
@@ -63,6 +65,8 @@ public class DbAnimalRepository implements AnimalRepository {
             response.setR(1);
             response.setMsg(ex.getMessage());
             LOGGER.error("Save error ", ex);
+        } finally {
+            session.close();
         }
         return response;
     }
