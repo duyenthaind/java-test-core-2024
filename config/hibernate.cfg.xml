@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/test_db?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull&amp;serverTimezone=UTC</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">example</property>
+
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.provider_class">
+            org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+        </property>
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">200</property>
+        <property name="hibernate.c3p0.timeout">300</property>
+        <property name="hibernate.c3p0.checkoutTimeout">50000</property>
+        <property name="hibernate.c3p0.max_statements">200</property>
+        <property name="hibernate.c3p0.idle_test_period">30000</property>
+        <property name="hibernate.globally_quoted_identifiers">true</property>
+
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <property name="jdbc.batch_size">100</property>
+        <property name="jdbc.order_inserts">true</property>
+        <property name="jdbc.order_updates">true</property>
+        <property name="generate_statistics">true</property>
+
+        <mapping class="org.example.entity.Animal"/>
+        <mapping class="org.example.entity.Duck"/>
+        <mapping class="org.example.entity.Cat"/>
+
+    </session-factory>
+</hibernate-configuration>
