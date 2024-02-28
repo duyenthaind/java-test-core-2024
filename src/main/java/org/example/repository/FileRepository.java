@@ -42,7 +42,7 @@ public class FileRepository implements AnimalRepository {
         StringBuilder contentSave = new StringBuilder();
         for (Animal a : animals) {
             try {
-                contentSave.append(objectMapper.writeValueAsString(a) + "\n");
+                contentSave.append(objectMapper.writeValueAsString(a)).append("\n");
             } catch (Exception ex) {
                 LOGGER.error("Batch save error ", ex);
                 res.setR(-1);
@@ -50,7 +50,7 @@ public class FileRepository implements AnimalRepository {
                 return res;
             }
         }
-        fileService.write(fileNameSave, contentSave.toString());
+        fileService.append(fileNameSave, contentSave.toString());
         return res;
     }
 }
