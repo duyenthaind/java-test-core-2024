@@ -1,8 +1,12 @@
-Phần 1
 Cho 2 loài vật Mèo và Vịt.
 1. Viết các class thể hiện "id", "tên", "type", "số lượng chân" và phương thức mô tả "tiếng kêu" của 2 loài vật này.
 2. Tạo 1 mảng 1000 phần tử lưu 2 đối tượng này (lưu chung 1 mảng) với rule: random 1 số lớn hơn 0, nếu số đó chia hết cho 2 thì phần tử đó là "Mèo", ngược lại thì là "Vịt".
 3. Lưu mảng này (Cấu trúc dữ liệu phần 1) vào 2 storage:
   + MySQL hoặc mongo (Đã tạo sẵn)
   + File (File text trên OS)
-  Yêu cầu: 2 tiến trình lưu này phải thực hiện đồng thời
+  Yêu cầu: 2 tiến trình lưu này phải thực hiện đồng thời, khi cả 2 tiến trình lưu xong thì in ra màn hình chữ "Done" (Chú ý là cả 2 tiến trình xong rồi mới thực hiện print)
+4. Đọc dữ liệu từ DB và File ra 1 mảng, giống với mảng ban đầu.
+  + DB ra 1 mảng, File ra 1 mảng.
+  + 2 tiến trình đọc này thực hiện song song.
+  + Sau khi đọc xong, so sánh 2 mảng, xem có sự khác biệt không
+  Chỗ này cần đưa ra được phương pháp so sánh và giải thích
