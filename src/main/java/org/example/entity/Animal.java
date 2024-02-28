@@ -65,8 +65,7 @@ public class Animal implements Serializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Animal animal = (Animal) o;
+        if (!(o instanceof Animal animal)) return false;
         return type == animal.type && numberOfLeg == animal.numberOfLeg && Objects.equals(id, animal.id) && Objects.equals(name, animal.name);
     }
 
